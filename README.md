@@ -24,20 +24,6 @@ This is a **Video Management Application** built using the **MERN stack** (Mongo
 - **Containerization**: Docker, Docker Compose
 - **UI Design**: Responsive UI
 
-## Environment Setup
-
-- **Clone the repository**:
-   ```bash
-   git clone https://github.com/gitusergb/vsmFront
-   ```
-      
-- The **backend** handles authentication, video uploads, metadata storage, and providing APIs for the frontend.
-- MongoDB is used to store video metadata and user information.
-
-  
-- The **frontend** is built with **React.js** and displays the uploaded videos, providing features like filtering, pagination, and a video player.
-  
-
 - **Configure Docker Compose**:
    The application is set up with Docker Compose. To run all services locally, use the following command:
 
@@ -46,79 +32,6 @@ This is a **Video Management Application** built using the **MERN stack** (Mongo
    ```
 
    This command will build and start the containers for the frontend, backend, and MongoDB database.
-
-- **Access the Application**:
-   - The frontend will be available at `http://localhost:3000 || https://extraordinary-lollipop-0bdcea.netlify.app/login`.
-   - The backend API will be available at `http://localhost:5000 ||https://vsm-owg3.onrender.com/`.
-
-- **Environment Variables**:
-   Make sure to configure the necessary environment variables (e.g., JWT secret, MongoDB URI, Google Drive credentials) in `.env` files for both the frontend and backend.
-
-## Authentication & User Access
-
-The app uses **JWT-based authentication**. Users must log in to access their uploaded videos, and each user will only see their own videos after logging in.
-
-### Upload Videos
-
-Users can upload videos directly from **Google Drive**, and the metadata (such as title, description, tags, and file size) is stored in the MongoDB database.
-
-### Video Player
-
-A built-in video player allows users to play videos directly from the application.
-
- **Login and Upload Videos**:
-   - Sign up or log in to access the app.
-   - Upload videos from Google Drive.
-   - Manage your videos using the filtering and pagination features.
-
-
-## Links
-
-- **Render Deployment**: [Link to Render](https://vsm-owg3.onrender.com/)
-- **Netlify Deployment**: [Link to Netlify](https://extraordinary-lollipop-0bdcea.netlify.app/login)
-
-## Screenshots
-
-
-<!-- https://i.ibb.co/cx2Nth4/vms-logo.png -->
-
-
-Some screenshots of the application:
-
-- **Login and Signup Page**:
-   ![Login Page](https://i.ibb.co/Qmtn4Tj/login-register.png)
-
-- **Videos Management Dashboard**:
-   ![videos_Dashboard](https://i.ibb.co/tmVZx2C/videos-page.png)
-
-- **Videos Upload**:
-
-   ![videos_upload](https://i.ibb.co/5BSWytb/upload-video.png)
-
-- **Video Player**:
-   ![Video Player](https://i.ibb.co/d5VSn39/videoone.png)
-
-
-## Video Walkthrough
-
-A short video walkthrough demonstrating the core functionality of the application, including login, video upload, filtering, and pagination, can be found [here](https://drive.google.com/file/d/1SnUQrQVxFMaVs5Auh2ggtbT3DPL3WEhs/view?usp=drive_link).
-
-## Contributor
-
-**Gauri Bidwai**
-
-<!-- # Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
